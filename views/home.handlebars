@@ -1,0 +1,64 @@
+ <!--Cabeçalho--->
+<div class="container-fluid"></div>
+    <header>
+        <div id="barra-superior" class="row">
+            <div class="col-sm-9 col-xs-6">
+                    <img src="/imagens/icone BRANCO.png" alt="L Basic's" height="50px" width="50px"> |
+                    <a href="/">Home</a> | <a href="/criar">Criar</a> |<a href="/editar">editar</a>
+
+                 
+            </div>
+            <div class="col-sm-3 col-xs-6"> 
+            </div>
+        </div>
+    </header>
+  <!--conteudo--->       
+        <div class="separa"></div>
+        <div class="row">
+
+            <div class="col-sm-12" id="lista">
+                <div><h1>Lista de contatos</h1>
+
+{{#each posts}}
+    <h5>{{nome}}</h5>
+    <p>{{telefone}}</p>
+    <p>{{email}}</p>
+    <a href="/deletar/{{id}}"><button>DELETAR</button></a>
+    <a href="/editar/"><button>ATUALIZAR</button></a>
+    <hr>
+{{/each}}</div>
+                <div class="overflow-scroll"></div>
+            </div>
+  <!--Footer--->            
+        <footer>
+            <div id="rodape">
+                <hr>
+                <p>| Copyright © 2020 - L Basic's | Contato: contato@LBasics.com | </p>
+            </div>
+        </footer>  
+    </div>
+  <!--botao retornar ao topo--->  
+    <div>
+        <button onclick="backToTop()" id="btnTop">
+            ^
+        </button>      
+    </div>
+</body>
+<script>
+    window.onscroll = function() {
+        scroll();
+    };
+    function scroll() {
+        let btn = document.getElementById("btnTop");
+        if (document.documentElement.scrollTop > 80) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+    function backToTop() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

@@ -1,0 +1,15 @@
+const db = require('./db')
+
+const Post = db.sequelize.define('contatos', {
+    nome: {
+        type: db.Sequelize.STRING
+    },
+    telefone: {
+        type: db.Sequelize.STRING
+    },
+    email: {
+        type: db.Sequelize.STRING
+    }
+})
+
+module.exports = Post

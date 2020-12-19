@@ -1,0 +1,70 @@
+ <!--Cabeçalho--->
+<div class="container-fluid"></div>
+    <header>
+        <div id="barra-superior" class="row">
+            <div class="col-sm-9 col-xs-6">
+                    <img src="/imagens/icone BRANCO.png" alt="L Basic's" height="50px" width="50px"> |
+                    <a href="/">Home</a> | <a href="/criar">Criar</a> |<a href="/editar">editar</a>
+
+                 
+            </div>
+            <div class="col-sm-3 col-xs-6"> 
+            </div>
+        </div>
+    </header>
+  <!--conteudo--->       
+    <div class="separa"></div>
+        <div class="row">
+
+            <div class="col-sm-12" id="contato-form">
+                <div><h3 style="text-align: center;">Criar contato</h3></div>
+                <div>
+                    <div class="overflow-scroll">
+                            <form action="/add" method="POST">
+                                <p>Nome</p>
+                                <input type="text" name="nome">
+                                <p>Telefone</p>
+                                <input type="text" name="telefone">
+                                <p>email</p>
+                                <input type="text" name="email">
+                                <button type="submit">Cadastrar contato</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="separa"></div>
+                </div> 
+            </div> 
+        </div> 
+  <!--Footer--->            
+        <footer>
+            <div id="rodape">
+                <hr>
+                <p>| Copyright © 2020 - L Basic's | Contato: contato@LBasics.com | </p>
+            </div>
+        </footer>  
+    </div>
+  <!--botao retornar ao topo--->  
+    <div>
+        <button onclick="backToTop()" id="btnTop">
+            ^
+        </button>      
+    </div>
+</body>
+<script>
+    window.onscroll = function() {
+        scroll();
+    };
+    function scroll() {
+        let btn = document.getElementById("btnTop");
+        if (document.documentElement.scrollTop > 80) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+    function backToTop() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+body{
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+a{
+    color: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+#barra-superior{
+    background-color: #22114e;
+    height: 50px;
+    width: auto;
+}
+.headbar{
+    text-align: center;
+}
+.separa{
+    height: 5px;
+}
+#botoes{
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    width: 120px;
+}
+#lista{
+    height: 1600px;
+}
+#contato-form{
+    height: 880px;
+    max-width: 1400px;
+}
+#rodape{
+    height: 50px;
+    font-size: 10px;
+    background-color: #22114e;
+    text-align: center;
+    width: auto;
+}
+#btnTop{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    display: none;
+    font-size: 35px;
+}
+@media screen and(max-width: 576px){
+
+}
